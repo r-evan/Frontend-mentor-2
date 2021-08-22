@@ -1,68 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  About
-  Services
-  Projects
-  Contact
+  <div id="page">
+    <div class="top">
+      <div class="fruit1">
+        <header>
+          <h6 class="nom-marque">sunnyside</h6>
+          <nav>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </nav>
+          <span class="button-burger"></span>
+        </header>
+        <div class="side-bar">
+          <nav>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+        <h2 class="titre">WE ARE CREATIVES</h2>
+        <img src="./images/icon-arrow-down.svg" alt="arrow-down" height="80px">
+      </div>
+      <div class="row1">
+        <div class="case1">
+          <h3>Transform your brand</h3>
+          <p> We are a full-service creative agency specializing in helping brands grow fast.
+            Engage your clients through compelling visuals that do most of the marketing for you.</p>
+          <a href="#">LEARN MORE</a>
+        </div>
+        <div class="case2"></div>
+      </div>
+      <div class="row">
+        <div class="case3"></div>
+        <div class="case4">
+          <h3>Stand out to the right audience</h3>
+          <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters,
+            we’ll
+            build
+            and extend your brand in digital places.</p>
+          <a href="#">LEARN MORE</a>
+        </div>
+      </div>
 
-  We are creatives
+    </div>
 
-  Transform your brand
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
+    <div class="bottom">
+      <div class="row">
+        <div class="case5">
+          <h4>Graphic design</h4>
+          <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+            potential
+            clients’ attention.</p>
+        </div>
+        <div class="case6">
+          <h4>Photography</h4>
+          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business
+            image.
+          </p>
+        </div>
+      </div>
+      <div class="client">
+        <p class="titre-client">CLIENT TESTIMONIALS</p>
+        <div class="avis">
+          <div class="commentaire">
+            <div class="photos1 photos"></div>
+            <p class="message">We put our trust in Sunnyside and they delivered, making sure our needs were met and
+              deadlines were
+              always
+              hit.</p>
+            <h6>Emily R.</h6>
+            <p class="role">Marketing Director</p>
+          </div>
+          <div class="commentaire">
+            <div class="photos2 photos"></div>
+            <p class="message">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a
+              satisfying and
+              enjoyable
+              experience.</p>
+            <h6>Thomas S.</h6>
+            <p class="role">Chief Operating Officer</p>
+          </div>
+          <div class="commentaire">
+            <div class="photos3 photos"></div>
+            <p class="message">Incredible end result! Our sales increased over 400% when we worked with Sunnyside.
+              Highly recommended!
+            </p>
+            <h6>Jennie F.</h6>
+            <p class="role">Business Owner</p>
+          </div>
+        </div>
+      </div>
 
-  Learn more
-
-  Stand out to the right audience
-
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-
-  Learn more
-
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-
-  Client testimonials
-
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
-  About
-  Services
-  Projects
-  Contact
+      <div class="row2">
+        <img class="case7 "></img>
+        <img class="case8"></img>
+        <img class="case9"></img>
+        <img class="case10"></img>
+      </div>
+      <footer>
+        <h3>sunnyside</h3>
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+          </ul>
+        </nav>
+        <div class="network">
+          <a href="#" class="icone"><img src="./images/icon-facebook.svg" alt="facebook"></a>
+          <a href="#" class="icone"><img src="./images/icon-instagram.svg" alt="instagram"></a>
+          <a href="#" class="icone"><img src="./images/icon-twitter.svg" alt="twitter"></a>
+          <a href="#" class="icone"><img src="./images/icon-pinterest.svg" alt="pinterest"></a>
+        </div>
+      </footer>
+    </div>
+  </div>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Evan Rioual</a>.
   </div>
+  <script>
+
+    let button = document.querySelector('.button-burger');
+    let menu = document.querySelector('.side-bar');
+    button.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    })
+    window.addEventListener('resize', () => {
+      let width = document.body.clientWidth + 17;
+      if (width > 650) {
+        menu.classList.remove("active");
+      }
+    });
+  </script>
+
 </body>
+
 </html>
