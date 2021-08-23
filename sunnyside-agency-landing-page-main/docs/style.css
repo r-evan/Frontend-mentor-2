@@ -5,18 +5,6 @@
     font-size: 18px;
     font-family: 'Barlow', sans-serif; 
 }
-#page{
-    display: flex;
-    margin: auto;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.top{
-    max-width: 600px;
-}
-.bottom{
-    max-width: 600px;
-}
 
 h2,h3,h4,h6{
     font-family: 'Fraunces', serif;
@@ -26,7 +14,7 @@ h2,h3,h4,h6{
     height: 350px;
     background-image: url(./images/desktop/image-header.jpg);
     background-size: cover;
-    background-position: center;
+    background-position:  bottom center;
     background-repeat: no-repeat;
     flex-direction: column;
     display: flex;
@@ -173,9 +161,35 @@ header li:last-child>a, .side-bar li:last-child>a{
     line-height: 22px;
 }
 .case1 a, .case4 a{
+    width: 132px;
+    font-size: 1rem;
     font-family: 'Fraunces', serif;
     font-weight: 900;
     color: black;
+    position: relative;
+}
+.case1 a::before, .case4 a::before{
+    content: "";
+    position: absolute;
+    width: 142px;
+    height: 8px;
+    background-color: rgba(0, 0, 255, 0.274);
+    border-radius: 4px;
+    bottom: -2px;
+    left: -5px;
+    transition: 300ms;
+}
+.case1 a::before{
+    background-color: rgba(255, 238, 0, 0.3);
+}
+.case4 a::before{
+    background-color: rgba(231, 46, 71, 0.3);
+}
+.case1 a:hover::before{
+    background-color: rgba(255, 238, 0, 0.75);
+}
+.case4 a:hover::before{
+    background-color: rgba(231, 46, 71, 0.75);
 }
 .row1, .row{
     width: 100%;
@@ -277,7 +291,7 @@ header li:last-child>a, .side-bar li:last-child>a{
     width: 25%;
     height: 300px;
     background-size: cover;
-    background-position: center, bottom;
+    background-position: center bottom;
 }
 footer{
     height: 230px;
@@ -315,9 +329,9 @@ footer a:hover{
         flex-wrap: wrap;
     }
     .row2 img{
+       
         height: 250px;
         width: 50%;
-        
     }
     header nav{
         display: none;
@@ -350,6 +364,9 @@ footer a:hover{
     .case1,.case2,.case3,.case4, .case5,.case6{
         width: 100%;
         text-align: center;
+    }
+    .case1 a, .case4 a{
+        margin: 10px auto;
     }
 }
 @media only screen and (max-width: 300px) {
